@@ -1,0 +1,189 @@
+<html>
+{% load static %}
+<head>
+<title>Daily Knowledge booster</title>
+<style>
+body {color: #3f312e; background: #ecd078; font: 14px Helvetica, Arial, Sans-serif; }
+a { color: 4f4f4f; }
+#header { width: 960px; min-height: 145px; margin: 0 auto; }
+
+#navigation { width: 960px; margin: 0 auto; position: relative;  top: 5px; }
+#navigation ul { margin: 0; padding: 0; list-style-type: none; }
+#navigation ul li { display: inline; margin-right: 3px; }
+#navigation ul li a { background: #fbe49b; text-decoration: none; padding: 10px 10px 6px 10px; text-transform: uppercase; border-left: 1px solid #e4bc3f; border-top: 1px solid #e4bc3f; border-right: 1px solid ##e4bc3f; background-color: #fbe49b; }
+
+#navigation ul li.current_page_item a, #navigation ul li a:hover { color: #3f312e; border-lefgt: 1px solid #fff; border-top: 1px solid #fff; border-right: 1px solid #fff; background: #fff; }
+
+#container { overflow:auto; width: 960px; margin: 0 auto; padding: 10px; background: #fbe49b; }
+#content { width: 960px; min-height: 2000px; margin: 0 auto; background: #fff; }
+#contentleft { width: 580px; float: left; margin-right:20px; margin-left:10; }
+#contentleft h1 {font-size: 24px; margin-top: 0; color:#000080; }
+#contentleft h2{font-size: 20px; margin-top:0;color:#000080;}
+#sidebar { width: 300px; float: left; padding: 25px; }
+.sidebar-element {overflow: hidden;overflow:scroll;overflow:auto;overflow:visible; margin-top: 15px; }
+#sidebar h3 { color: #fff; background: #53777a; padding: 7px 10px; text-transform: uppercase; font-size: 14px; }
+#sidebar ul { margin:0; padding: 0; list-style-type: none; }
+#sidebar ul li {margin: 0 0 7px 0; }
+
+#footer { width: 960px; margin: 0 auto; text-align: center; }
+#footer ul { margin: 15px 0 0 0; padding: 0; list-style-type: none; }
+#footer ul li {display: inline; margin-right: 5px; }
+#footer ul li a { text-transform: uppercase; text-decoration: none; }
+#footer ul li a:hover{ text-decoration: underline; }
+#footer p { font-weight: bold; }  
+</style>
+</head>
+<boby>
+<div id="header">
+<a href="http://localhost:8000/mysite/home"><img src="{% static "QW.PNG" %}" alt="logo"/></a>
+
+</div><!--header-->
+<div id="navigation">
+   <ul>
+       <li><a href="http://localhost:8000/mysite/home">Home</a></li>
+          
+       <li><a href="http://localhost:8000/mysite/gk">GK</a></li>
+       <li><a href="http://localhost:8000/mysite/about">About</a></li>
+       <li><a href="http://localhost:8000/mysite/contact">Contact</a></li>
+  </ul>
+</div><!--nevigation-->
+
+<div id="container">
+<div id="content">
+<div id="contentleft">
+
+   <h1> {{data}}</h1>
+    <p> {{i}}</p>
+    <h2> {{p}}</h2>
+ <a href = '{{link}}' > {{link}}</a>
+
+ 
+    <P>{{e}}</P>
+    <h2>{{f}}</h2>
+ <a href = '{{link1}}' > {{link1}}</a> 
+    <P>{{g}}</P>
+    <h2>{{j}}</h2>
+<a href = '{{link5}}' > {{link5}}</a>
+<a href = '{{link6}}' > {{link6}}</a>
+<a href = '{{link7}}' > {{link7}}</a>
+
+<h2>{{hh}}</h2>
+<p>{{w}}</p>
+<a href = '{{link8}}' > {{link8}}</a>
+
+<p>{{k}}</p>
+<a href = '{{link9}}' > {{link9}}</a>
+
+<p>{{l}}</p>
+<a href = '{{link10}}' > {{link10}}</a>
+
+<p>{{m}}</p>
+<a href = '{{link11}}' > {{link11}}</a>
+
+<p>{{n}}</p>
+<a href = '{{link12}}' > {{link12}}</a>
+
+
+<p>{{o}}</p>
+<a href = '{{link13}}' > {{link13}}</a>
+
+<p>{{q}}</p>
+<a href = '{{link14}}' > {{link14}}</a>
+
+<p>{{r}}</p>
+<a href = '{{link15}}' > {{link15}}</a>
+
+<p>{{s}}</p>
+<a href = '{{link16}}' > {{link16}}</a>
+
+<p>{{t}}</p>
+<a href = '{{link17}}' > {{link17}}</a>
+<h2>{{ff}}</h2>
+
+<p>{{u}}</p>
+<a href = '{{link18}}' > {{link18}}</a>
+<p>{{v}}</p>
+<a href = '{{link19}}' > {{link19}}</a>
+<p>{{x}}</p>
+<a href = '{{link20}}' > {{link20}}</a>
+<p>{{y}}</p>
+<a href = '{{link21}}' > {{link21}}</a>
+<p>{{z}}</p>
+<a href = '{{link22}}' > {{link22}}</a>
+
+<h2>{{kk}}</h2>
+<p>{{aa}}</p>
+<a href = '{{link23}}' > {{link23}}</a>
+<p>{{bb}}</p>
+<a href = '{{link24}}' > {{link24}}</a>
+<p>{{cc}}</p>
+<a href = '{{link25}}' > {{link25}}</a>
+<p>{{dd}}</p>
+<a href = '{{link26}}' > {{link26}}</a>
+<p>{{ee}}</p>
+<a href = '{{link27}}' > {{link27}}</a>
+<p>{{gg}}</p>
+<a href = '{{link28}}' > {{link28}}</a>
+<h2>{{ii}}</h2> 
+<a href = '{{link2}}' > {{link2}}</a>
+<a href = '{{link3}}' > {{link3}}</a>
+<a href = '{{link4}}' > {{link4}}</a>
+
+
+
+
+
+
+
+<img src="{% static "images" %}/{{img}}"> 
+
+</div><!--containerleft--> 
+
+<div id="sidebar">
+<div class ="sidebar-element">
+<h3>Current affairs list</h3>
+   <ul>
+       <li><a href="http://localhost:8000/static/weekly.pdf">Current Affairs daily PDF</a></li>
+       <li><a href="http://localhost:8000/static/daily.pdf">Current Affairs weekly PDF</a></li>
+       <li><a href="http://localhost:8000/static/july'18.pdf">Current Affairs monthly PDF</a></li>
+       <li><a href="">Current Affairs yearly PDF</a></li>
+       <li><a href="http://localhost:8000/mysite/books_links">E-books & Links</a></li>
+   </ul>
+
+
+</div>
+<div class="sidebar-element">
+<h3>about me</h3>
+
+
+
+<p>Daily knoweledge booster <a href ="http://localhost:8000/mysite">(www.dailyknowledgebooster.in)</a> is a leading website providing valuable, convenient, relevant and enjoyable online education pertaining to GK & Current Affairs to students, aspirants and general public through a diversity of services. This website is a venture of Nitesh kumar. The main orientation of this website is to create a large repository of knowledge for the general reference of students and aspirants. Daily booster was launched in august, 2018 and is a pioneer in providing high quality content to students and aspirants of various examinations in India. The 2 member team of Daily knowlegde booster includes former aspirants of the Civil Services Examination.</p>
+</div>
+<div class="sidebar-element">
+<h3>General Knowledge Quiz</h3>
+<p>coming soon...</p>
+
+
+
+
+</div><!--sidebar-->
+
+</div><!--content-->
+</div><!--container--->
+
+<div id="footer">
+  <ul>
+       <li><a href="http://localhost:8000/mysite/home">Home</a></li>
+       <li><a href="http://localhost:8000/mysite/about">About</a></li>
+       <li><a href="http://localhost:8000/mysite/contact">Contact</a></li>
+  </ul>
+<p>&copy;2018 Daily Knowledge booster</p>
+
+</div><!--footer-->
+
+ 
+</div>
+</body>
+
+</html>
+ 
